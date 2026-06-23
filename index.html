@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.G.L — Áudio · Música · Pesquisa</title>
+
+  <!-- ── SEO ──────────────────────────────────────────────────── -->
+  <meta name="description" content="Portfólio de Miguel Albuquerque (M.G.L) — Sound Designer para jogos, DJ de House Music e pesquisador em Sistemas de Informação na FACOM/UFMS." />
+  <meta name="author" content="Miguel Albuquerque — M.G.L" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mgl.dev/" />
+
+  <!-- ── Open Graph (LinkedIn, WhatsApp, Facebook) ─────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="M.G.L — Áudio · Música · Pesquisa" />
+  <meta property="og:description" content="Sound Designer para jogos, DJ de House Music e pesquisador em SI na FACOM/UFMS. Projetos: Pantanal World, A Odisseia de Teseu, WBME." />
+  <meta property="og:url"         content="https://mgl.dev/" />
+  <meta property="og:image" content="https://miguelsdealbuquerque.github.io/portfolio/assets/img/og-cover.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- ── Twitter Card ──────────────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="M.G.L — Áudio · Música · Pesquisa" />
+  <meta name="twitter:description" content="Sound Designer para jogos, DJ de House Music e pesquisador em SI na FACOM/UFMS." />
+  <meta property="og:image" content="https://miguelsdealbuquerque.github.io/portfolio/assets/img/og-cover.jpg" />
+
+  <!-- ── Favicon ───────────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0A0A0C" />
+
+  <!-- ── Preload hero image (LCP) ──────────────────────────────── -->
+  <link rel="preload" as="image" href="assets/img/_DSC2900.JPG" fetchpriority="high" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header id="header" role="banner">
+    <a class="nav-logo" href="#" onclick="showPage('home')">M.G.L</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#" onclick="showPage('home')" data-page="home" class="active" data-i18n="nav_home">Início</a></li>
+        <li><a href="#" onclick="showPage('sobre')" data-page="sobre" data-i18n="nav_about">Sobre</a></li>
+        <li><a href="#" onclick="showPage('gameaudio')" data-page="gameaudio" data-i18n="nav_games">Games</a></li>
+        <li><a href="#" onclick="showPage('musica')" data-page="musica" data-i18n="nav_music">Música</a></li>
+        <li><a href="#" onclick="showPage('pesquisa')" data-page="pesquisa" data-i18n="nav_research">Pesquisa</a></li>
+        <li><a href="#" onclick="showPage('contato')" data-page="contato" data-i18n="nav_contact">Contato</a></li>
+        <li><a href="#" onclick="showPage('ajuda')" data-page="ajuda" data-i18n="nav_help">Ajuda</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Idioma">
+      <button id="btn-pt" class="active" onclick="setLang('pt')">PT</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: HOME
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-home" class="page active" role="main">
+
+    <!-- Hero -->
+    <section id="hero" aria-label="Apresentação principal">
+      <div class="hero-slide active kb1" style="background-image:url('assets/img/_DSC2900.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb2"        style="background-image:url('assets/img/_DSC2938.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb3"        style="background-image:url('assets/img/_DSC2949.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb4"        style="background-image:url('assets/img/_DSC2951.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb1"        style="background-image:url('assets/img/_DSC3016.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb2"        style="background-image:url('assets/img/_DSC3027.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb3"        style="background-image:url('assets/img/_DSC3033.JPG')" aria-hidden="true"></div>
+      <div class="hero-slide kb4"        style="background-image:url('assets/img/_DSC0189.JPG')" aria-hidden="true"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <h1 class="sr-only">M.G.L — Miguel Albuquerque · Sound Designer · DJ · Pesquisador em Sistemas de Informação</h1>
+        <img class="hero-logo-img" src="assets/img/logo.webp">
+        <p class="hero-tagline">
+          Sound Design · <span>Música</span> · Pesquisa Acadêmica
+        </p>
+        <button class="hero-cta" onclick="showPage('gameaudio')">Ver Game Audio</button>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- Intro + cards -->
+    <div id="home-content">
+      <div class="divider"></div>
+      <div class="section-wrap">
+        <div class="home-intro">
+          <div class="home-intro-text">
+            <p class="section-label">quem é M.G.L</p>
+            <h2>Som que atravessa<br/><em>telas e pistas</em></h2>
+            <p>Natural de Petrópolis (RJ), sou <strong>Game Sound Director</strong>, DJ e produtor musical — pesquisador pela FACOM/UFMS e integrante do LEDES. Desde 2021 construo experiências sonoras: trilhas de videogames, sets de House Music e pesquisa acadêmica sobre o processo de criação de áudio para jogos indie.</p>
+            <p><em>"A batida não é apenas som, mas combustível e a música, uma forma de salvação."</em></p>
+            <div class="tag-list">
+              <span class="tag">FMOD Studio</span>
+              <span class="tag">Godot 4</span>
+              <span class="tag">Ableton 12</span>
+              <span class="tag">FL Studio</span>
+              <span class="tag accent">FACOM/UFMS</span>
+              <span class="tag accent">LEDES</span>
+            </div>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
+              <button class="hero-cta" style="font-size:0.78rem;padding:0.6rem 1.5rem;" onclick="showPage('gameaudio')">Games</button>
+                    <button class="hero-cta" style="font-size:0.78rem;padding:0.6rem 1.5rem;background:transparent;border:1px solid var(--accent);color:var(--accent);" onclick="showPage('musica')">Música</button>
+              <button class="hero-cta" style="font-size:0.78rem;padding:0.6rem 1.5rem;background:transparent;border:1px solid var(--border);color:var(--muted);" onclick="showPage('pesquisa')">Pesquisa</button>
+            </div>
+          </div>
+          <div class="intro-visual">
+            <img src="miguel-foto.jpeg" alt="Miguel Albuquerque — M.G.L" loading="lazy" />
+          </div>
+        </div>
+
+        <p class="cards-label">// Destaques de projetos</p>
+        <div class="cards-grid">
+
+          <!-- Card 1 -->
+          <article class="card" tabindex="0" role="article" aria-label="Pantanal World 2D" onclick="showGame('pantanal2d')" style="cursor:pointer;">
+            <div class="card-thumb">
+              <img src="assets/img/PantanalWorld2D.jpg" alt="Pantanal World 2D — Jogo Educativo" loading="lazy" />
+              <span class="card-badge">GameMaker · Educativo</span>
+            </div>
+            <div class="card-body">
+              <h3>Pantanal World 2D</h3>
+              <p>Jogo educativo de palavras ambientado no Pantanal. Mais de 27 animais catalogados, 3 níveis de dificuldade. Indicado na trilha da <strong>COP-15 / INTEGRA 2025</strong>. Registrado no INPI.</p>
+              <div class="card-footer">
+                <span class="card-meta">LEDES/UFMS · 2024–2025</span>
+                <div class="card-arrow" aria-hidden="true">
+                  <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" tabindex="0" role="article" aria-label="Projeto A Odisseia de Teseu" onclick="showGame('teseu')" style="cursor:pointer;">
+            <div class="card-thumb">
+              <img src="assets/img/Theseus' Odyssey.jpg" alt="A Odisseia de Teseu — Sound Design" loading="lazy" />
+              <span class="card-badge">GameMaker · Sound Design</span>
+            </div>
+            <div class="card-body">
+              <h3>A Odisseia de Teseu</h3>
+              <p>Sound design completo e implementação de áudio para jogo de aventura mitológica. Composição de trilha adaptativa, design de SFX e integração com motor de jogo. Projeto acadêmico pelo laboratório LEDES.</p>
+              <div class="card-footer">
+                <span class="card-meta">LEDES/UFMS · 2023–2024</span>
+                <div class="card-arrow" aria-hidden="true">
+                  <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" tabindex="0" role="article" aria-label="WBME Set #01" onclick="showMusic('wbme01')" style="cursor:pointer;">
+            <div class="card-thumb">
+              <img src="assets/img/WBME.jpg" alt="WBME Set #01 — Intimate Backyard House &amp; Deep House" loading="lazy" />
+              <span class="card-badge">Música · House / Deep House</span>
+            </div>
+            <div class="card-body">
+              <h3>WBME #01 — Intimate Backyard</h3>
+              <p>Primeiro set gravado do projeto <em>World By My Eyes</em>. House e Deep House em ambiente íntimo.</p>
+              <div class="card-footer">
+                <span class="card-meta">WBME · 2025</span>
+                <div class="card-arrow" aria-hidden="true">
+                  <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ver todos games -->
+        <div style="text-align:right;margin-top:1.5rem;padding-bottom:1rem;">
+          <button onclick="showPage('gameaudio')" style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;color:var(--accent);background:none;border:none;cursor:pointer;">Ver todos os jogos →</button>
+        </div>
+
+      </div><!-- /section-wrap games -->
+
+      <!-- ══ MÚSICA ════════════════════════════════════════════ -->
+      <div class="divider"></div>
+      <div class="section-wrap" style="padding:5rem 1.5rem;">
+        <p class="section-label">DJ · Produção · WBME</p>
+        <h2 class="section-title" style="margin-bottom:1rem;">House Music<br/>como <em>linguagem</em></h2>
+        <p style="color:var(--muted);max-width:580px;line-height:1.8;margin-bottom:3rem;">
+          Desde 2025 em bares do centro de Campo Grande e eventos como a <strong style="color:var(--white);">@Lostcg</strong>.
+          O projeto <strong style="color:var(--white);">WBME — World By My Eyes</strong> documenta os sets em vídeo:
+          ambientes íntimos, House clássico de Chicago e Deep House atmosférico.
+        </p>
+        <div class="cards-grid" style="max-width:420px;">
+          <article class="card" tabindex="0" onclick="showMusic('wbme01')" style="cursor:pointer;" aria-label="WBME Set #01">
+            <div class="card-thumb">
+              <img src="assets/img/WBME.jpg" alt="WBME Set #01" loading="lazy" />
+              <span class="card-badge">House / Deep House</span>
+            </div>
+            <div class="card-body">
+              <h3>WBME #01 — Intimate Backyard</h3>
+              <p>House e Deep House em ambiente íntimo — primeiro set do projeto.</p>
+              <div class="card-footer">
+                <span class="card-meta">2025</span>
+                <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div style="text-align:right;margin-top:1.5rem;">
+          <button onclick="showPage('musica')" style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;color:var(--accent);background:none;border:none;cursor:pointer;">Ver projeto WBME →</button>
+        </div>
+      </div>
+
+      <!-- ══ PESQUISA ══════════════════════════════════════════ -->
+      <div class="divider"></div>
+      <div class="section-wrap" style="padding:5rem 1.5rem;">
+        <p class="section-label">academia & ciência</p>
+        <h2 class="section-title" style="margin-bottom:1rem;">Pesquisa <em>acadêmica</em></h2>
+        <p style="color:var(--muted);max-width:580px;line-height:1.8;margin-bottom:3rem;">
+          TCC sobre produção de áudio para jogos indie, publicações em congressos nacionais
+          e preparação para o <strong style="color:var(--white);">mestrado na QUT</strong> (Brisbane, AU) em 2027.
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-bottom:2rem;">
+          <div class="skills-card">
+            <p class="heuristic-num">TCC · FACOM/UFMS</p>
+            <h3 class="heuristic-title">Processo de Produção de Áudio para Jogos Indie</h3>
+            <p class="heuristic-desc">Investigação sobre o workflow de sound design em contextos independentes — com análise de casos do LEDES/UFMS.</p>
+          </div>
+          <div class="skills-card">
+            <p class="heuristic-num">SBSI 2025 · INTERCOM 2026</p>
+            <h3 class="heuristic-title">Publicações & Congressos</h3>
+            <p class="heuristic-desc">Artigo aprovado no SBSI 2025 e projetos inscritos na Expocom/Intercom 2026. Pesquisador no LEDES/UFMS desde 2022.</p>
+          </div>
+          <div class="skills-card" style="border-color:rgba(61,255,192,0.25);">
+            <p class="heuristic-num" style="color:var(--mint);">OBJETIVO · 2027</p>
+            <h3 class="heuristic-title">Mestrado Internacional</h3>
+            <p class="heuristic-desc">Candidatura à <strong style="color:var(--white);">QUT — Queensland University of Technology</strong> em Brisbane, com foco em games research e áudio interativo.</p>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <button onclick="showPage('pesquisa')" style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;color:var(--accent);background:none;border:none;cursor:pointer;">Ver pesquisa completa →</button>
+        </div>
+      </div>
+
+      <!-- ══ CONTATO CTA ════════════════════════════════════════ -->
+      <div class="divider"></div>
+      <div class="section-wrap" style="padding:5rem 1.5rem 4rem;text-align:center;">
+        <p class="section-label">vamos conversar</p>
+        <h2 class="section-title" style="margin-bottom:1rem;">Tem um projeto<br/>em <em>mente</em>?</h2>
+        <p style="color:var(--muted);max-width:480px;margin:0 auto 2.5rem;line-height:1.8;">
+          Aberto a colaborações em jogos, sound design, música e para tocar na sua próxima festa.
+        </p>
+        <button class="hero-cta" onclick="showPage('contato')" style="font-size:0.9rem;padding:0.85rem 2.5rem;">
+          Mandar mensagem →
+        </button>
+        <div style="margin-top:2rem;display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;">
+          <a href="mailto:miguelsdealbuquerque@gmail.com" style="color:var(--muted);font-size:0.8rem;font-family:var(--font-mono);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--muted)'">miguelsdealbuquerque@gmail.com</a>
+          <a href="https://instagram.com/realmgl_" target="_blank" rel="noopener" style="color:var(--muted);font-size:0.8rem;font-family:var(--font-mono);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--white)'" onmouseout="this.style.color='var(--muted)'">@realmgl_</a>
+        </div>
+      </div>
+
+      <footer>
+        Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026
+      </footer>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: GAME AUDIO
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-gameaudio" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">jogos</p>
+      <h2 class="section-title">Games</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">Projetos de jogos — como <strong>Game Sound Director</strong> no LEDES e como desenvolvedor/game designer em game jams. Middleware principal: <strong>FMOD Studio</strong> com <strong>Godot 4</strong>.</p>
+
+      <!-- Projetos -->
+      <p class="cards-label">// Projetos</p>
+      <div class="cards-grid">
+
+        <article class="card" tabindex="0" role="article" aria-label="Pantanal World 2D" onclick="showGame('pantanal2d')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="assets/img/PantanalWorld2D.jpg" alt="Pantanal World 2D — Jogo Educativo" loading="lazy" />
+            <span class="card-badge">Educativo · Puzzle · Palavras</span>
+          </div>
+          <div class="card-body">
+            <h3>Pantanal World 2D</h3>
+            <p>Jogo educativo de palavras ambientado no Pantanal. Mais de 27 animais catalogados em pixel art — da Onça-Pintada ao Tuiuiú. 3 níveis de dificuldade. Indicado à premiação na trilha da <strong>COP-15 no INTEGRA 2025/UFMS</strong>. Registrado no INPI (Processo nº BR512025006815-8). Desenvolvido no LEDES + PET Sistemas com GameMaker Studio.</p>
+            <div class="card-footer">
+              <span class="card-meta">LEDES/UFMS · PET Sistemas</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="article" aria-label="A Odisseia de Teseu" onclick="showGame('teseu')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="assets/img/Theseus' Odyssey.jpg" alt="A Odisseia de Teseu — Sound Design" loading="lazy" />
+            <span class="card-badge">GameMaker · Sound Design</span>
+          </div>
+          <div class="card-body">
+            <h3>A Odisseia de Teseu</h3>
+            <p>Sound design completo e implementação de áudio para jogo de aventura mitológica. Composição de trilha adaptativa, design de SFX e integração com motor de jogo. Projeto acadêmico pelo LEDES/UFMS.</p>
+            <div class="card-footer">
+              <span class="card-meta">LEDES/UFMS · 2023–2024</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="article" aria-label="Museu das Mulheres" onclick="showGame('museu')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="assets/img/Museu das mulheres.jpg" alt="Museu das Mulheres — Game Audio" loading="lazy" />
+            <span class="card-badge">GameMaker · Sound Design</span>
+          </div>
+          <div class="card-body">
+            <h3>Museu das Mulheres</h3>
+            <p>Direção de áudio e sound design para jogo com temática cultural. Projeto desenvolvido no laboratório LEDES/UFMS.</p>
+            <div class="card-footer">
+              <span class="card-meta">LEDES/UFMS</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="article" aria-label="BlueberryScape" onclick="showGame('blueberry')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="Blueberryscape.jpeg" alt="BlueberryScape — Game Jam IFMS 2022" loading="lazy" />
+            <span class="card-badge">GameMaker · Game Design & Code</span>
+          </div>
+          <div class="card-body">
+            <h3>BlueberryScape</h3>
+            <p>Ajude a Blueberry a escapar da cozinha malvada e se plantar no jardim! Submissão para a <strong>Side Quest 2022</strong> (IFMS). Código de menu, game design e narrativa.</p>
+            <div class="card-footer">
+              <span class="card-meta">Side Quest 2022 · IFMS</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="article" aria-label="Trocadalho" onclick="showGame('trocadalho')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="trocadalho.png" alt="Trocadalho — Global Game Jam 2024" loading="lazy" />
+            <span class="card-badge">Unity · Sound Design</span>
+          </div>
+          <div class="card-body">
+            <h3>Trocadalho</h3>
+            <p>Global Game Jam 2024 no <strong>SEBRAE Living Lab</strong>. Modificador especial: <em>todos os sons feitos com a boca</em> — músicas, risadas, assobios melódicos e efeitos sonoros. Gravamos uma versão do tema do Mickey (domínio público), mixamos tudo em 3 dias e entregamos pro time. Primeira experiência com sound design, em parceria com Diogo.</p>
+            <div class="card-footer">
+              <span class="card-meta">Global Game Jam · 2024</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="article" aria-label="Burn the Dead" onclick="showGame('burnthedead')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="burnthedead.png" alt="Burn the Dead — GameJam+" loading="lazy" />
+            <span class="card-badge">GameMaker · Música · SFX · Roteiro</span>
+          </div>
+          <div class="card-body">
+            <h3>Burn the Dead</h3>
+            <p>Beat 'em Up 2.5D Steampunk-Gótico com elementos Roguelite. Ambientado em Tirana devastada por uma praga, segue Avulli, engenheira mecânica traída pelo governo. Gameplay tático baseado em gestão de Pressão de Vapor. Responsável pela <strong>música, efeitos sonoros e roteiro</strong>.</p>
+            <div class="card-footer">
+              <span class="card-meta">GameJam+ · 2025</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Em Desenvolvimento -->
+      <p class="cards-label" style="margin-top:3rem;">// Em Desenvolvimento</p>
+      <div class="cards-grid">
+
+        <article class="card card-dev" tabindex="0" role="article" aria-label="Pantanal World 3D — Em Desenvolvimento">
+          <div class="card-thumb">
+            <img class="bg-img" src="assets/img/game-pantanal-world-Y2N5466c.jpg" alt="Pantanal World 3D" />
+            <img class="gif-char" src="assets/img/loading_capibara.gif" alt="" aria-hidden="true" />
+            <span class="dev-label">EM DESENVOLVIMENTO</span>
+          </div>
+          <div class="card-body">
+            <h3>Pantanal World 3D</h3>
+            <p>Aventura sandbox/exploração em low poly ambientada no vasto bioma do Pantanal. Construa, descubra segredos e interaja com a fauna local. <em>Texto a confirmar.</em></p>
+            <div class="card-dev-tags">
+              <span class="card-dev-tag">Godot 4</span>
+              <span class="card-dev-tag">Sandbox</span>
+              <span class="card-dev-tag">Exploração</span>
+              <span class="card-dev-tag">Low Poly</span>
+              <span class="card-dev-tag">Diretor de Som</span>
+            </div>
+            <div class="card-footer" style="margin-top:1rem;">
+              <span class="card-meta">LEDES/UFMS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-dev" tabindex="0" role="article" aria-label="Macro Planet — Em Desenvolvimento">
+          <div class="card-thumb">
+            <img class="bg-img" src="assets/img/game-macro-planet-PHSr-3Lz.jpg" alt="Macro Planet" />
+            <img class="gif-char" src="assets/img/loading_capibara.gif" alt="" aria-hidden="true" />
+            <span class="dev-label">EM DESENVOLVIMENTO</span>
+          </div>
+          <div class="card-body">
+            <h3>Macro Planet</h3>
+            <p>Jogo de gerenciamento e exploração. <em>Texto a confirmar.</em></p>
+            <div class="card-dev-tags">
+              <span class="card-dev-tag">Unity</span>
+              <span class="card-dev-tag">Gerenciamento</span>
+              <span class="card-dev-tag">Exploração</span>
+              <span class="card-dev-tag">Diretor de Som</span>
+              <span class="card-dev-tag">Game Design</span>
+            </div>
+            <div class="card-footer" style="margin-top:1rem;">
+              <span class="card-meta">LEDES/UFMS</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Ferramentas & processo -->
+      <div style="margin-top:3.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;">
+
+        <div class="skills-card">
+          <h4>// Middleware & Engine</h4>
+          <div class="skill-row">
+            <span class="skill-label">FMOD Studio</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Godot 4</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Audio Design Document</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <h4>// Técnicas</h4>
+          <div class="skill-row">
+            <span class="skill-label">Música Adaptativa</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Voice Stealing / Mixing Bus</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Sound Design de SFX</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <h4>// Contexto</h4>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">Atuação via laboratório <strong style="color:var(--white);">LEDES/UFMS</strong>. TCC focado no processo de produção de áudio para jogos indie. Objetivo de curto prazo: mestrado na <strong style="color:var(--white);">QUT (Brisbane, AU)</strong> para 2027 com foco em games research.</p>
+          <button class="hero-cta" style="font-size:0.75rem;padding:0.5rem 1.2rem;margin-top:1rem;" onclick="showPage('pesquisa')">Ver pesquisa acadêmica →</button>
+        </div>
+
+      </div>
+    </div>
+    <footer>Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026</footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: GAME DETAIL (dinâmico)
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-game-detail" class="page" role="main">
+    <div class="game-detail-hero">
+      <img id="gd-hero-img" src="" alt="" />
+      <div class="game-detail-hero-overlay">
+        <button class="game-detail-back" id="gd-back-btn" onclick="showPage('gameaudio')">← Voltar</button>
+        <h1 class="game-detail-title" id="gd-title"></h1>
+        <span class="game-detail-badge-hero" id="gd-badge"></span>
+      </div>
+    </div>
+    <div class="game-detail-body">
+      <div class="game-detail-meta" id="gd-meta"></div>
+      <div class="game-detail-desc" id="gd-desc"></div>
+      <p class="game-detail-section-label">// Tags</p>
+      <div class="game-detail-tags" id="gd-tags"></div>
+      <p class="game-detail-section-label" id="gd-links-label" style="display:none;">// Links</p>
+      <div class="game-detail-links" id="gd-links"></div>
+    </div>
+    <footer>Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026</footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: MÚSICA
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-musica" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">DJ · Produção · Audiovisual</p>
+      <h2 class="section-title">Música</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">House Music como paixão, produção como linguagem, WBME como projeto. Três frentes que se alimentam.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-bottom:3rem;">
+
+        <!-- DJ / Events -->
+        <div class="skills-card" style="border-color:var(--accent);">
+          <h4 style="color:var(--accent);">// DJ &amp; Eventos</h4>
+          <p style="font-size:0.9rem;color:var(--muted);line-height:1.75;margin-bottom:1rem;">Desde 2025 marcando presença em bares do centro de Campo Grande, festas como a <strong style="color:var(--white);">@Lostcg</strong> e eventos privados. Sets pulsantes guiados pela House Music — a grande paixão.</p>
+          <p style="font-size:0.85rem;color:var(--muted);">Mais do que tocar, busco devolver à cena o impacto que a música teve na minha vida: provocar emoção, inspirar movimento e criar conexão genuína.</p>
+          <div class="tag-list" style="margin-top:1rem;">
+            <span class="tag">House Music</span>
+            <span class="tag">Deep House</span>
+            <span class="tag">Eventos ao vivo</span>
+          </div>
+        </div>
+
+        <!-- Produção Musical -->
+        <div class="skills-card">
+          <h4>// Produção Musical</h4>
+          <p style="font-size:0.9rem;color:var(--muted);line-height:1.75;margin-bottom:1rem;">Produção eletrônica com início em 2021 — do rap à trilha de jogos, agora nas pistas. Setup principal: <strong style="color:var(--white);">Ableton 12 Suite</strong> e <strong style="color:var(--white);">FL Studio</strong>.</p>
+          <div class="skill-row">
+            <span class="skill-label">Ableton 12 Suite</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">FL Studio</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">FabFilter / Valhalla / iZotope</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+
+        <!-- WBME -->
+        <div class="skills-card">
+          <h4>// WBME — World By My Eyes</h4>
+          <p style="font-size:0.9rem;color:var(--muted);line-height:1.75;margin-bottom:1rem;">Projeto musical independente onde exploro House, Deep House e texturas eletrônicas. Sets publicados no SoundCloud desde 2025.</p>
+          <div class="tag-list" style="margin-top:0.5rem;margin-bottom:1rem;">
+            <span class="tag accent">Set #01 disponível</span>
+          </div>
+          <a class="social-link" href="https://soundcloud.com/m-g-l" target="_blank" rel="noopener" aria-label="SoundCloud WBME">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M1.175 12.225c-.042 0-.07.02-.084.063l-.44 2.24.44 2.193c.014.045.042.068.084.068.04 0 .067-.023.08-.068l.5-2.193-.5-2.24c-.013-.043-.04-.063-.08-.063zm1.665-.69c-.05 0-.08.026-.094.08l-.39 2.93.39 2.82c.014.056.044.082.094.082.048 0 .078-.026.093-.082l.44-2.82-.44-2.93c-.015-.054-.045-.08-.093-.08zm10.746 1.42c-.056-.02-.115-.03-.176-.03-.18 0-.35.048-.497.132-.05-1.79-1.52-3.23-3.327-3.23-.45 0-.876.09-1.26.25-.148.06-.188.122-.19.178v6.282c.002.058.044.106.104.12h5.346c.6 0 1.086-.487 1.086-1.087V13.5a2.16 2.16 0 00-1.086-1.875z"/></svg>
+            Ouvir no SoundCloud →
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Card WBME Set #01 destaque -->
+      <p class="cards-label">// Destaque</p>
+      <div class="cards-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:500px;">
+        <article class="card" tabindex="0" role="article" aria-label="WBME Set #01" onclick="showMusic('wbme01')" style="cursor:pointer;">
+          <div class="card-thumb">
+            <img src="assets/img/WBME.jpg" alt="WBME Set #01 — Intimate Backyard House &amp; Deep House" loading="lazy" />
+            <span class="card-badge">House / Deep House</span>
+          </div>
+          <div class="card-body">
+            <h3>WBME #01 — Intimate Backyard</h3>
+            <p>Primeiro set gravado do projeto <em>World By My Eyes</em>. House e Deep House em ambiente íntimo.</p>
+            <div class="card-footer">
+              <span class="card-meta">WBME · 2025</span>
+              <div class="card-arrow" aria-hidden="true"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+    <footer>Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026</footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: SOBRE
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-sobre" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">sobre mim</p>
+      <h2 class="section-title">De onde vem o <em>som</em><br/>e onde vai o código</h2>
+
+      <div style="display:flex;align-items:center;gap:2.5rem;margin-bottom:3rem;flex-wrap:wrap;">
+        <div style="flex-shrink:0;width:200px;height:260px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:0 0 40px rgba(123,92,240,0.15);">
+          <img src="miguel-foto.jpeg" alt="Miguel Albuquerque — M.G.L" style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+        </div>
+        <div>
+          <h3 style="font-size:1.6rem;margin-bottom:0.3rem;">Miguel Albuquerque</h3>
+          <p style="color:var(--accent);font-size:0.9rem;margin-bottom:0.8rem;">Game Sound Director · DJ · Produtor Musical</p>
+          <p style="color:var(--muted);font-size:0.88rem;line-height:1.7;max-width:420px;">Natural de Petrópolis (RJ), atualmente em Campo Grande (MS). Estudante de Sistemas de Informação na FACOM/UFMS, pesquisador no LEDES.</p>
+          <div class="tag-list" style="margin-top:1rem;">
+            <span class="tag accent">FACOM/UFMS</span>
+            <span class="tag accent">LEDES</span>
+            <span class="tag">House Music</span>
+            <span class="tag">FMOD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <h3>Origens</h3>
+          <p>Me chamo <strong>Miguel Albuquerque</strong> — natural de Petrópolis (RJ), estudante de Sistemas de Informação na FACOM/UFMS e pesquisador no LEDES. Minha relação com a música vem desde pequeno, mas foi em 2021 que comecei a participar na produção de faixas: inicialmente no rap, depois em trilhas sonoras de videogames e, mais recentemente, para as pistas de dança.</p>
+          <p>Minha trajetória mistura engenharia de software com design sonoro de uma forma que faz todo sentido para quem acha que código e música falam a mesma língua. O laboratório <strong>LEDES/UFMS</strong> foi o espaço onde consegui unir as duas frentes de verdade, atuando como responsável pelo áudio em projetos de jogos acadêmicos.</p>
+          <blockquote style="border-left:3px solid var(--accent);padding-left:1rem;margin:1.5rem 0;font-style:italic;color:var(--muted);">"A batida não é apenas som, mas combustível e a música, uma forma de salvação." <strong style="display:block;margin-top:0.3rem;color:var(--white);font-style:normal;">— M.G.L</strong></blockquote>
+
+          <h3>Sound Design para Jogos</h3>
+          <p>Uso <strong>FMOD Studio</strong> como middleware principal para implementação de áudio em jogos, trabalhando em cima de motores como <strong>Godot 4</strong>. Já fui responsável pelo áudio de dois jogos: <em>A Odisseia de Teseu</em> e <em>Pantanal World 3D</em>, este último exibido no evento Integra da UFMS. No Pantanal World, construí um sistema de áudio adaptativo completo — máquina de estados de música, hierarquia de voice stealing, design de fauna do Pantanal e um sistema de Listen Mode inspirado em jogos como The Last of Us.</p>
+          <p>Meu TCC investiga justamente esse processo: o <strong>Processo de Produção de Áudio para Sound Design em Jogos Indie</strong>, com submissões para a <strong>Expocom/Intercom 2026</strong>. A próxima meta é tentar o mestrado na <strong>QUT (Queensland University of Technology)</strong> em Brisbane para 2027, onde a área de games research é forte.</p>
+
+          <h3>House Music</h3>
+          <p>Desde 2025, venho soltando sets no <strong>SoundCloud</strong> e marcando presença em bares do centro da cidade, além de festas como a <strong>@Lostcg</strong> e eventos privados. Guiado pela House Music — minha grande paixão —, entrego sets pulsantes que carregam referências dos estilos que moldaram minha trajetória.</p>
+          <p>Mais do que tocar, busco devolver à cena o impacto que a música teve na minha vida: provocar emoção, inspirar movimento e transformar cada apresentação em um espaço de conexão genuína. Sob o projeto <strong>WBME (World By My Eyes)</strong>, produzo House, Deep House e texturas eletrônicas com <strong>Ableton 12 Suite</strong> e FL Studio.</p>
+
+          <h3>Pesquisa e Academia</h3>
+          <p>Faço parte do <strong>PET Sistemas</strong>, onde lidero ações de transferência de conhecimento e produção de documentação institucional. No LEDES, contribuo com pesquisa aplicada em jogos digitais, com foco em experiência de usuário e design de áudio. Estou me preparando para a transição para a pós-graduação com foco em games, som e HCI.</p>
+        </div>
+
+        <div class="skills-panel">
+          <div class="skills-card">
+            <h4>// Áudio & Jogos</h4>
+            <div class="skill-row">
+              <span class="skill-name">FMOD Studio</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Godot 4</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Ableton 12</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">FL Studio</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Sound Design 3D</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+            </div>
+          </div>
+          <div class="skills-card">
+            <h4>// Desenvolvimento</h4>
+            <div class="skill-row">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Java / C</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">HTML/CSS/JS</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+          <div class="skills-card">
+            <h4>// Links</h4>
+            <div class="social-links">
+              <a class="social-link" href="https://instagram.com/realmgl_" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                @realmgl_
+              </a>
+              <a class="social-link" href="https://youtube.com/@OfficialM.G.L" target="_blank" rel="noopener" aria-label="YouTube">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                @OfficialM.G.L
+              </a>
+              <a class="social-link" href="https://soundcloud.com/m-g-l" target="_blank" rel="noopener" aria-label="SoundCloud">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M1.175 12.225c-.042 0-.07.02-.084.063l-.44 2.24.44 2.193c.014.045.042.068.084.068.04 0 .067-.023.08-.068l.5-2.193-.5-2.24c-.013-.043-.04-.063-.08-.063zm1.665-.69c-.05 0-.08.026-.094.08l-.39 2.93.39 2.82c.014.056.044.082.094.082.048 0 .078-.026.093-.082l.44-2.82-.44-2.93c-.015-.054-.045-.08-.093-.08zm1.655-.345c-.06 0-.094.03-.108.09l-.348 3.275.348 3.15c.014.06.048.09.108.09.058 0 .09-.03.106-.09l.392-3.15-.392-3.275c-.016-.06-.048-.09-.106-.09zm1.664-.39c-.066 0-.103.032-.116.1l-.308 3.665.308 3.448c.013.067.05.1.116.1.065 0 .1-.033.116-.1l.348-3.448-.348-3.665c-.016-.068-.051-.1-.116-.1zm1.665-.27c-.074 0-.116.034-.13.104l-.27 3.935.27 3.72c.014.072.056.106.13.106.073 0 .114-.034.13-.106l.304-3.72-.304-3.935c-.016-.07-.057-.104-.13-.104zm1.664-.203c-.082 0-.128.038-.143.113l-.234 4.138.234 3.983c.015.076.061.114.143.114.08 0 .125-.038.142-.114l.265-3.983-.265-4.138c-.017-.075-.062-.113-.142-.113zm1.665-.09c-.088 0-.137.04-.154.12l-.198 4.228.198 4.237c.017.08.066.12.154.12.086 0 .135-.04.152-.12l.226-4.237-.226-4.228c-.017-.08-.066-.12-.152-.12zm1.664-.045c-.096 0-.15.043-.166.13L12 11.025l.2 4.46c.016.088.07.13.166.13.094 0 .148-.042.165-.13l.226-4.46-.226-4.233c-.017-.087-.07-.13-.165-.13zm1.665.023c-.103 0-.16.047-.177.14l-.165 4.21.165 4.66c.017.093.074.14.177.14.1 0 .158-.047.175-.14l.188-4.66-.188-4.21c-.017-.093-.075-.14-.175-.14zm1.664-.07c-.11 0-.17.05-.187.15l-.13 4.28.13 4.85c.017.1.077.15.187.15.108 0 .168-.05.185-.15l.148-4.85-.148-4.28c-.017-.1-.077-.15-.185-.15zm2.386 1.42c-.056-.02-.115-.03-.176-.03-.18 0-.35.048-.497.132-.05-1.79-1.52-3.23-3.327-3.23-.45 0-.876.09-1.26.25-.148.06-.188.122-.19.178v6.282c.002.058.044.106.104.12h5.346c.6 0 1.086-.487 1.086-1.087V13.5a2.16 2.16 0 00-1.086-1.875z"/></svg>
+                @M.G.L
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026
+    </footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: CURRÍCULO
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-pesquisa" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">academia & ciência</p>
+      <h2 class="section-title">Pesquisa <em>acadêmica</em></h2>
+      <p class="section-subtitle" style="margin-bottom:2rem;">Trajetória no LEDES, TCC sobre áudio em jogos indie e preparação para o mestrado internacional.</p>
+
+      <div class="curriculo-grid">
+        <div class="curriculo-col">
+          <h3>// Pesquisa & Academia</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <p class="timeline-date">Dezembro 2025</p>
+              <h4 class="timeline-title">Artigo publicado — REPET-TL / INTERPET 2025</h4>
+              <p class="timeline-sub">Revista Eletrônica do PET · UFMS</p>
+              <p class="timeline-desc"><em>Contribuições e Impactos do Grupo PET Sistemas na Última Década.</em> Autores: Amanda Ribeiro, Cauê Almeida, Daniel Santos, Eduardo Souza, Miguel Sobreira de Albuquerque, Maria Istela Cagnin. <a href="https://periodicos.ufms.br/index.php/REPET-TL/article/view/24560" target="_blank" rel="noopener" style="color:var(--accent);">Ler artigo →</a></p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">Maio 2025</p>
+              <h4 class="timeline-title">Artigo publicado — SBSI 2025</h4>
+              <p class="timeline-sub">Simpósio Brasileiro de Sistemas de Informação</p>
+              <p class="timeline-desc"><em>Pedagogical and Accessibility Guidelines for Digital Educational Games.</em> Autores: Gilvan Junior, Miguel de Albuquerque, Lucas Borth, Michele Soares, Awdren Fontão, Débora Paiva. <a href="https://sol.sbc.org.br/index.php/sbsi/article/view/34347/34138" target="_blank" rel="noopener" style="color:var(--accent);">Ler artigo →</a></p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2025 → presente</p>
+              <h4 class="timeline-title">Submissão Expocom/Intercom 2026</h4>
+              <p class="timeline-sub">Pesquisa científica · Congresso Nacional</p>
+              <p class="timeline-desc">Submissão de trabalho científico para a Expocom/Intercom 2026, investigando o processo de produção de áudio para sound design em jogos indie brasileiros. Pesquisa com base em metodologia qualitativa e análise de casos práticos dos projetos do LEDES.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2025</p>
+              <h4 class="timeline-title">TCC em desenvolvimento</h4>
+              <p class="timeline-sub">FACOM/UFMS · Sistemas de Informação</p>
+              <p class="timeline-desc">Trabalho de Conclusão de Curso com foco no <em>Processo de Produção de Áudio para Sound Design em Jogos Indie</em>. Pesquisa que une conhecimento técnico de engenharia de software com design sonoro interativo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2024 → 2025</p>
+              <h4 class="timeline-title">Guia de Produção Pontocast</h4>
+              <p class="timeline-sub">PET Sistemas · Documentação Institucional</p>
+              <p class="timeline-desc">Responsável pela criação de documentação técnica completa de produção de podcast para o PET Sistemas. Manual com fundamentação teórica (PMBOK, modelo SECI, Gawande) e referências ABNT — projeto de legado institucional.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2025</p>
+              <h4 class="timeline-title">Burn the Dead — GameJam+</h4>
+              <p class="timeline-sub">Game Jam · Música, SFX & Roteiro</p>
+              <p class="timeline-desc">Beat 'em Up 2.5D Steampunk-Gótico com Roguelite. Responsável pela trilha sonora, efeitos sonoros e roteiro do jogo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2024</p>
+              <h4 class="timeline-title">Trocadalho — Global Game Jam 2024</h4>
+              <p class="timeline-sub">SEBRAE Living Lab · Sound Design</p>
+              <p class="timeline-desc">Primeira experiência com sound design. Modificador: todos os sons feitos com a boca — tema do Mickey (domínio público), risadas, assobios e SFX. Tudo gravado, mixado e entregue em 3 dias com o Diogo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2022</p>
+              <h4 class="timeline-title">BlueberryScape — Side Quest 2022</h4>
+              <p class="timeline-sub">Game Jam · IFMS · Primeiro jogo</p>
+              <p class="timeline-desc">Primeiro jogo desenvolvido em equipe. Responsável pelo código de menu, game design e narrativa.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2022 → presente</p>
+              <h4 class="timeline-title">Membro ativo — PET Sistemas</h4>
+              <p class="timeline-sub">FACOM/UFMS</p>
+              <p class="timeline-desc">Participação em atividades de ensino, pesquisa e extensão. Organização de eventos, tutoriais técnicos e transferência de conhecimento para a comunidade acadêmica.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">Futuro · 2027</p>
+              <h4 class="timeline-title">Meta: Mestrado na QUT</h4>
+              <p class="timeline-sub">Queensland University of Technology · Brisbane, AU</p>
+              <p class="timeline-desc">Objetivo de curto prazo pós-graduação: ingressar no programa de mestrado da QUT (Queensland University of Technology) com foco em games research, áudio interativo e design de experiências sonoras imersivas.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="curriculo-col">
+          <h3>// Game Audio no LEDES</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <p class="timeline-date">2024 → 2025</p>
+              <h4 class="timeline-title">Pantanal World 3D — Direção de Áudio</h4>
+              <p class="timeline-sub">LEDES/UFMS · Godot 4 + FMOD Studio</p>
+              <p class="timeline-desc">Audio Design Document (ADD v1.1), música adaptativa com state machine, voice stealing, mixing bus dinâmico, design de fauna do Pantanal e Listen Mode. Exibido no <strong>evento Integra/UFMS</strong>.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">2023 → 2024</p>
+              <h4 class="timeline-title">A Odisseia de Teseu — Sound Design</h4>
+              <p class="timeline-sub">LEDES/UFMS · Jogo Acadêmico</p>
+              <p class="timeline-desc">Sound design completo, trilha adaptativa, design de SFX e integração com motor de jogo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">LEDES/UFMS</p>
+              <h4 class="timeline-title">Museu das Mulheres — Game Audio</h4>
+              <p class="timeline-sub">LEDES/UFMS · Jogo Cultural</p>
+              <p class="timeline-desc">Direção de áudio e sound design para jogo com temática cultural desenvolvido no LEDES.</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-date">Futuro · 2027</p>
+              <h4 class="timeline-title">Meta: Mestrado na QUT</h4>
+              <p class="timeline-sub">Queensland University of Technology · Brisbane, AU</p>
+              <p class="timeline-desc">Programa com foco em games research, áudio interativo e design de experiências sonoras imersivas.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);">
+        <p class="section-label" style="margin-bottom:0.5rem;">// Formação</p>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.85;">
+          <strong style="color:var(--white);">Sistemas de Informação · FACOM/UFMS</strong> — Formação com ênfase em engenharia de software, estruturas de dados, banco de dados e IHC. Conclusão prevista 2025.<br/><br/>
+          <strong style="color:var(--white);">GitHub:</strong> <a href="https://github.com/realmgl" target="_blank" rel="noopener" style="color:var(--accent);">github.com/realmgl</a>
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026
+    </footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: CONTATO
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-contato" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">fale comigo</p>
+      <h2 class="section-title">Vamos <em>conversar</em></h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">Aberto a colaborações em projetos de jogos, sound design, música, pesquisa acadêmica ou para tocar na sua próxima festa.</p>
+
+      <div class="contato-layout">
+        <div class="contato-info">
+          <h3>Onde me encontrar</h3>
+          <p>Para projetos sérios ou só para trocar ideia — use o formulário ou me ache nas redes abaixo. Geralmente respondo rápido.</p>
+
+          <div class="contact-card">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <div>
+              <span>E-mail</span>
+              <strong>miguelsdealbuquerque@gmail.com</strong>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <div>
+              <span>Telefone</span>
+              <strong>+55 (67) 99169-9910</strong>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            <div>
+              <span>Localização</span>
+              <strong>Campo Grande, MS — Brasil</strong>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <div>
+              <span>Instagram</span>
+              <strong>@realmgl_</strong>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.21a8.18 8.18 0 004.78 1.52V7.28a4.85 4.85 0 01-1.02-.59z"/></svg>
+            <div>
+              <span>YouTube</span>
+              <strong>@OfficialM.G.L</strong>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="contact-form-wrap">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Nome</label>
+                <input id="contact-name" type="text" placeholder="Seu nome completo" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">E-mail</label>
+                <input id="contact-email" type="email" placeholder="seu@email.com" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-assunto">Assunto</label>
+              <select id="contact-assunto">
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option>Colaboração em jogo / áudio</option>
+                <option>DJ para evento / festa</option>
+                <option>Projeto musical / WBME</option>
+                <option>Pesquisa acadêmica</option>
+                <option>Outros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">Mensagem</label>
+              <textarea id="contact-msg" placeholder="Conta o que você tem em mente..."></textarea>
+            </div>
+            <button class="btn-send" onclick="submitForm()">Enviar mensagem</button>
+          </div>
+
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <h3>Mensagem enviada!</h3>
+            <p>Recebi sua mensagem e respondo em breve. Obrigado pelo contato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026
+    </footer>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PAGE: AJUDA / HEURÍSTICAS
+  ════════════════════════════════════════════════════════════ -->
+  <main id="page-ajuda" class="page" role="main">
+    <div class="section-wrap" style="padding-top: 7rem;">
+      <p class="section-label">IHC · Heurísticas de Nielsen</p>
+      <h2 class="section-title">Decisões de <em>design</em><br/>fundamentadas</h2>
+
+      <div class="ajuda-intro">
+        <strong>Nota metodológica:</strong> Este portfólio foi construído com as 10 Heurísticas de Usabilidade de Jakob Nielsen como referencial de projeto. Cada seção abaixo documenta onde e como uma heurística foi aplicada, justificando a decisão de design de forma objetiva. Este documento serve como evidência avaliativa para a disciplina de Interação Humano-Computador (IHC) e também como guia de boas práticas para qualquer pessoa que queira entender as escolhas do sistema.
+      </div>
+
+      <div class="heuristic-grid">
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 01 · NIELSEN</p>
+          <h3 class="heuristic-title">Visibilidade do Status do Sistema</h3>
+          <p class="heuristic-desc">O sistema deve sempre manter os usuários informados sobre o que está acontecendo, por meio de feedback apropriado e em tempo hábil.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> O link ativo no menu de navegação recebe a cor <em>ciano (#3DFFC0)</em> e um glow sutil, indicando visualmente em qual seção o usuário está. A transição é imediata ao clicar. Além disso, ao enviar o formulário de contato, um estado de sucesso substitui o formulário com feedback visual explícito confirmando a ação.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 02 · NIELSEN</p>
+          <h3 class="heuristic-title">Correspondência com o Mundo Real</h3>
+          <p class="heuristic-desc">O sistema deve usar a linguagem do usuário — palavras, frases e conceitos familiares ao usuário, em vez de termos orientados ao sistema.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> Os nomes das abas de navegação ("Início", "Game Audio", "Música", "Pesquisa", "Sobre", "Contato", "Ajuda") foram escolhidos por serem termos que o público-alvo deste portfólio — recrutadores de games, produtores musicais e pesquisadores acadêmicos — reconhece e espera. Os campos do formulário usam rótulos diretos e familiares. As seções de cards usam linguagem conversacional em primeira pessoa.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 03 · NIELSEN</p>
+          <h3 class="heuristic-title">Controle e Liberdade do Usuário</h3>
+          <p class="heuristic-desc">Usuários frequentemente escolhem funções do sistema por engano e precisam de uma "saída de emergência" claramente marcada para sair do estado indesejado.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> O header fixo (sticky) garante que a navegação — com 7 abas claras — está sempre disponível em qualquer ponto de rolagem, sem necessidade de voltar ao topo. Ao clicar no logo M.G.L, o usuário sempre retorna à Página Inicial. Cada página temática (Game Audio, Música, Pesquisa) tem botões de CTA que direcionam para outras seções relacionadas, garantindo fluxo sem becos sem saída.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 04 · NIELSEN</p>
+          <h3 class="heuristic-title">Consistência e Padrões</h3>
+          <p class="heuristic-desc">Os usuários não devem ter que se perguntar se palavras, situações ou ações diferentes significam a mesma coisa.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> Todos os cards de projeto seguem o mesmo layout (thumbnail, badge, título, descrição, metadados, seta). As cores do sistema são usadas consistentemente: violeta #7B5CF0 para ações e destaques, ciano #3DFFC0 para estados ativos e dados técnicos, cinza #8880A8 para texto secundário. A tipografia Space Grotesk é mantida em todo o site, com Syne Mono apenas para labels e código.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 05 · NIELSEN</p>
+          <h3 class="heuristic-title">Prevenção de Erros</h3>
+          <p class="heuristic-desc">Ainda melhor do que boas mensagens de erro é um design cuidadoso que previne a ocorrência de problemas.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> O principal risco de erro neste portfólio é a ilegibilidade do menu sobre fundos variáveis da hero image. A solução foi o <em>Glassmorphism progressivo</em>: o header começa 100% transparente no topo da página e aplica backdrop-filter: blur(20px) e fundo semi-opaco ao rolar, garantindo contraste legível em qualquer momento. O texto do menu tem text-shadow adicional para reforçar legibilidade sobre fundos claros.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 06 · NIELSEN</p>
+          <h3 class="heuristic-title">Reconhecimento em vez de Lembrança</h3>
+          <p class="heuristic-desc">Minimize a carga de memória do usuário tornando objetos, ações e opções visíveis.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> Toda a navegação é sempre visível no header fixo — o usuário não precisa lembrar onde estão as seções. Os cards de projeto mostram contexto visual (imagem), categoria (badge), nome e descrição em um único lugar, sem exigir que o usuário entre e saia para descobrir o que cada projeto é. O formulário usa <em>placeholder text</em> com exemplos para reduzir dúvidas sobre o que preencher.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 07 · NIELSEN</p>
+          <h3 class="heuristic-title">Flexibilidade e Eficiência de Uso</h3>
+          <p class="heuristic-desc">Aceleradores — invisíveis para o usuário novato — podem agilizar a interação para o usuário especialista.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> A logo M.G.L no canto esquerdo do header funciona como atalho para a página inicial (padrão universal em portfólios/sites). Toda a navegação suporta keyboard navigation — links são focáveis com Tab e ativados com Enter. Estados :focus-visible com outline em violeta garantem que usuários de teclado vejam onde estão. No mobile, há um menu hamburguer que substitui a nav para eficiência em telas pequenas.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 08 · NIELSEN</p>
+          <h3 class="heuristic-title">Estética e Design Minimalista</h3>
+          <p class="heuristic-desc">Os diálogos não devem conter informações irrelevantes ou raramente necessárias, pois competem com informações relevantes e diminuem sua visibilidade relativa.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> O design usa um sistema de cor com apenas 5 valores, sem gradientes decorativos desnecessários. Cada elemento tem uma função (cor, tipografia, espaçamento), sem ornamentos puramente decorativos. A hero section tem apenas 3 elementos: logo, tagline, botão CTA. Os cards têm hierarquia visual clara sem informação redundante. A paleta escura reduz o ruído visual e coloca foco no conteúdo.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 09 · NIELSEN</p>
+          <h3 class="heuristic-title">Ajuda para Reconhecer, Diagnosticar e Recuperar Erros</h3>
+          <p class="heuristic-desc">As mensagens de erro devem ser expressas em linguagem simples (sem códigos), indicar com precisão o problema e sugerir uma solução.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> O formulário de contato usa o tipo semântico correto nos inputs (type="email" ativa validação nativa do navegador, que mostra mensagem de erro amigável antes do envio). O campo "Assunto" usa um select com placeholder desabilitado, impedindo envio sem seleção. A estrutura HTML semântica e os atributos aria garantem que leitores de tela consigam informar o usuário sobre estados de erro de forma acessível.
+          </div>
+        </div>
+
+        <div class="heuristic-card">
+          <p class="heuristic-num">HEURÍSTICA 10 · NIELSEN</p>
+          <h3 class="heuristic-title">Ajuda e Documentação</h3>
+          <p class="heuristic-desc">Embora seja melhor que o sistema possa ser usado sem documentação, pode ser necessário fornecer ajuda.</p>
+          <div class="heuristic-example">
+            <strong>Aplicação:</strong> Esta própria página ("Ajuda") é a implementação direta desta heurística. Ela documenta o sistema de design, justifica cada decisão de IHC e serve como guia de referência para entender as escolhas do portfólio. O item "Ajuda" no menu é visível e nomeado diretamente, tornando o acesso à documentação imediato para qualquer usuário.
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 3rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);">
+        <p class="section-label" style="margin-bottom:0.5rem;">// Padrões adicionais aplicados</p>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85;">
+          <strong style="color:var(--white);">Acessibilidade (WCAG):</strong> Todos os elementos interativos têm rótulos aria-label, estados de foco visíveis e contraste mínimo de 4.5:1 nas combinações de cor principais. Imagens decorativas têm role="img" com alt text descritivo. O site respeita prefers-reduced-motion, desabilitando animações para usuários sensíveis a movimento. <br/><br/>
+          <strong style="color:var(--white);">Design Responsivo:</strong> Layout em grid com breakpoints em 768px para reorganização completa do conteúdo em dispositivos móveis. Header colapsa em menu hamburguer. Tipografia usa clamp() para escala fluida entre tamanhos de tela.<br/><br/>
+          <strong style="color:var(--white);">Performance:</strong> Imagens carregadas com loading="lazy". Fonte carregada com display=swap para evitar FOIT. CSS usa custom properties para consistência e facilidade de manutenção.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      Feito com ♫ por <span>M.G.L</span> · FACOM/UFMS · 2026
+    </footer>
+  </main>
+
+  <!-- ─── SCRIPTS ──────────────────────────────────────────────── -->
+  <script src="js/script.js"></script>
+</body>
+</html>
